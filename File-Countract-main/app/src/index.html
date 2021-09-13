@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MetaCoin | Truffle Webpack Demo w/ Frontend</title>
+</head>
+<style>
+  input {
+    display: block;
+    margin-bottom: 12px;
+  }
+</style>
+
+<body>
+
+  <div class="contier">
+    <div class="send">
+      <h1>Send File</h1>
+
+
+      <label for="FileHash">FileHash:</label>
+      <input type="text" id="FileHash" placeholder="e.g. 95"
+        placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae" />
+    
+      <label for="FileName">name File:</label>
+      <input type="text" id="FileName" />
+
+      <label for="FileCommant">name Commant:</label>
+      <input type="text" id="FileCommant" />
+
+      <button onclick="App.sendFile()">Send File</button>
+
+      <p id="status1"></p>
+      <p>
+        <strong>Hint:</strong> open the browser developer console to view any
+        errors and warnings.
+      </p>
+    </div>
+    <di class="find">
+      <h1>Find File</h1>
+      <label for="FileHash">FileHash:</label>
+      <input type="text" id="FileHash2" placeholder="e.g. 95"
+        placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae" />
+
+      <button onclick="App.findFile()">Send File</button>
+
+      <p id="status2"></p>
+      <p>
+        <strong>Hint:</strong> open the browser developer console to view any
+        errors and warnings.
+      </p>
+    </di>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
